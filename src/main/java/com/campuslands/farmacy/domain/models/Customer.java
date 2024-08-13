@@ -2,6 +2,8 @@ package com.campuslands.farmacy.domain.models;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
@@ -14,7 +16,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Customer {
-    
+
     @Id
     private String id;
     private String namecustomer;
@@ -25,5 +27,6 @@ public class Customer {
     private Double latcustomer;
 
     @ManyToOne
+    @JsonBackReference
     private City codecitycustomer;
 }

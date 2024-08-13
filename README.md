@@ -9,7 +9,7 @@ Entidad Seleccionada
 Endpoints Disponibles
 1. Crear un Cliente
 
-    URL: /api/customer/saveCustomer
+    URL: http://localhost:8080/api/customer/saveCustomer
     Método HTTP: POST
     Descripción: Crea un nuevo registro de cliente en la base de datos.
     Cuerpo de la Solicitud:
@@ -36,7 +36,7 @@ Endpoints Disponibles
 
 2. Actualizar un Cliente
 
-    URL: /api/customer/updateCustomer/{customerId}
+    URL: http://localhost:8080/api/customer/updateCustomer/{customerId}
     Método HTTP: PUT
     Descripción: Actualiza un registro existente de cliente en la base de datos.
     Parámetros de Ruta:
@@ -46,7 +46,7 @@ Endpoints Disponibles
 
 3. Eliminar un Cliente
 
-    URL: /api/customer/deleteCustomer/{customerId}
+    URL: http://localhost:8080/api/customer/deleteCustomer/{customerId}
     Método HTTP: DELETE
     Descripción: Elimina un registro de cliente en la base de datos.
     Parámetros de Ruta:
@@ -55,6 +55,6 @@ Endpoints Disponibles
 
 4. Obtener Todos los Clientes
 
-    URL: /api/customer/allCustomers
+    URL: http://localhost:8080/api/customer/allCustomers
     Método HTTP: GET
     Descripción: Recupera todos los registros de clientes en la base de datos.
